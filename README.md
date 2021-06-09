@@ -1,24 +1,11 @@
-# front-end
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
+### Tirare su localmente front-end dalla root del progetto
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Tirare su localmente back-end api
 ```
-npm run build
+cd server
+php -S localhost:8080
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
