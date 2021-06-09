@@ -3,7 +3,8 @@
         "bulveyz/router-php": "^1.0",
         "ext-pdo": "*",
         "symfony/routing": "^5.3",
-        "slim/slim": "^4.8"
+        "slim/slim": "^4.8",
+        "klein/klein": "^2.1"
     },
     "autoload": {
         "psr-4": {

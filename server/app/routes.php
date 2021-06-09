@@ -1,19 +1,27 @@
 <?php
-use Psr\Http\Message\ResponseInterface as Response;
-use Psr\Http\Message\ServerRequestInterface as Request;
-use Slim\Factory\AppFactory;
+use App\Controller\OrdiniController;
+use App\Router\Router;
+/*require __DIR__ . '/../vendor/autoload.php';*/
 
-require __DIR__ . '/../vendor/autoload.php';
+/*$klein = new \Klein\Klein();
 
-// Instantiate App
-$app = AppFactory::create();
-
-// Add error middleware
-$app->addErrorMiddleware(true, true, true);
-
-// Add routes
-$app->get('/', function (Request $request, Response $response) {
-    echo 'test';
+$klein->respond('GET', '/api/getOrdini', function () {
+    $ordiniController = new OrdiniController();
+    $result = $ordiniController->getOrdini();
+    return $result;
 });
 
-$app->run();
+$klein->respond('GET', '/api/getOrdiniInverse', function () {
+    $ordiniController = new OrdiniController();
+    $result = $ordiniController->getOrdiniInverse();
+    return $result;
+});
+
+$klein->dispatch();*/
+
+Router::set('/api/getOrdini',function (){
+    $ordiniController = new OrdiniController();
+    $result = $ordiniController->getOrdini();
+    return $result;
+});
+
