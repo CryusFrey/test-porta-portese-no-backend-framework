@@ -1,6 +1,7 @@
 <?php
 namespace App\Controller;
-use App\DB\Mysqli;
+use App\Database\Mysqli;
+
 
 class OrdiniController
 {
@@ -8,6 +9,7 @@ class OrdiniController
     {
         $db = new Mysqli();
         $data = $db->query('SELECT cliente, data FROM ordini ORDER BY data ASC');
+        var_dump($data);
         return json_encode($data);
     }
 
