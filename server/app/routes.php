@@ -1,7 +1,7 @@
 <?php
 use App\Controller\OrdiniController;
 use App\Router\Router;
-/*require __DIR__ . '/../vendor/autoload.php';*/
+require_once '/../vendor/autoload.php';
 
 /*$klein = new \Klein\Klein();
 
